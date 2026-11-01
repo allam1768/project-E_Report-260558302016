@@ -50,11 +50,11 @@
         <button
             type="submit"
             wire:loading.attr="disabled"
-            class="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-bold transition bg-blue-600 text-white shadow-sm shadow-blue-200 hover:bg-blue-700 w-full"
+            class="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-bold transition bg-blue-600 text-white hover:bg-blue-700 w-full"
         >
-            <span wire:loading.remove wire:target="login">
+            <span wire:loading.remove wire:target="login" class="inline-flex items-center gap-2">
                 Masuk ke Akun
-                <span aria-hidden="true">→</span>
+                <i data-lucide="arrow-right" aria-hidden="true" class="h-4 w-4 shrink-0"></i>
             </span>
             <span wire:loading wire:target="login">Memeriksa akun…</span>
         </button>

@@ -67,7 +67,6 @@
                     </div>
                 </div>
                 <p class="text-xs text-blue-300">E-Report · Suara Warga, Langkah Perubahan.</p>
-                <div class="pointer-events-none absolute -right-44 -bottom-44 h-[500px] w-[500px] rounded-full border-[65px] border-blue-900/60"></div>
             </aside>
             <main class="flex items-center justify-center px-6 py-10 sm:px-12">
                 <div class="w-full max-w-md">

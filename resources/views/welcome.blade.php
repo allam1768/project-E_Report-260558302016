@@ -55,7 +55,7 @@
                     @auth
                         <a
                             href="{{ route(auth()->user()->dashboardRoute()) }}"
-                            class="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-bold transition bg-blue-600 text-white shadow-sm shadow-blue-200 hover:bg-blue-700"
+                            class="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-bold transition bg-blue-600 text-white hover:bg-blue-700"
                         >
                             Dashboard
                             <i data-lucide="arrow-up-right" aria-hidden="true" class="h-4 w-4 shrink-0"></i>
@@ -64,7 +64,7 @@
                         <a href="{{ route('login') }}" class="px-2 text-sm font-bold text-slate-600">Masuk</a>
                         <a
                             href="{{ route('register') }}"
-                            class="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-bold transition bg-blue-600 text-white shadow-sm shadow-blue-200 hover:bg-blue-700"
+                            class="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-bold transition bg-blue-600 text-white hover:bg-blue-700"
                         >
                             Daftar
                             <i data-lucide="arrow-up-right" aria-hidden="true" class="h-4 w-4 shrink-0"></i>
@@ -91,7 +91,7 @@
                         <div class="mt-9 flex flex-wrap gap-3">
                             <a
                                 href="{{ auth()->check() ? route(auth()->user()->dashboardRoute()) : route('register') }}"
-                                class="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-bold transition bg-blue-600 text-white shadow-sm shadow-blue-200 hover:bg-blue-700 px-6 py-3.5"
+                                class="inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3.5 text-sm font-bold transition bg-blue-600 text-white hover:bg-blue-700"
                             >
                                 Mulai Buat Pengaduan
                                 <i data-lucide="arrow-right" aria-hidden="true" class="h-4 w-4 shrink-0"></i>
@@ -107,60 +107,48 @@
                         </div>
                     </div>
                     <div class="relative mx-auto w-full max-w-lg pb-7 lg:pl-5" aria-label="Ilustrasi alur pengaduan">
-                        <div class="absolute inset-5 rounded-[32px] bg-blue-100/70"></div>
-                        <div class="relative overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl shadow-blue-950/5">
+                        <div class="relative overflow-hidden rounded-2xl border border-slate-200/80 bg-white shadow-xs">
                             <div class="flex items-center justify-between border-b border-slate-100 px-6 py-5">
-                                <div class="flex items-center gap-2 text-sm font-bold">
+                                <div class="flex items-center gap-2 text-sm font-bold text-slate-800">
                                     <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-600 text-white">
                                         <i data-lucide="messages-square" aria-hidden="true" class="h-4 w-4 shrink-0"></i>
                                     </span>
-                                    Pengaduan Lingkungan
+                                    Alur Penanganan Transparan
                                 </div>
-                                <span class="rounded-full bg-slate-100 px-2.5 py-1 text-[10px] font-semibold text-slate-500">ILUSTRASI</span>
+                                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-[10px] font-semibold text-slate-500">CONTOH</span>
                             </div>
                             <div class="p-6">
-                                <div class="relative mb-5 flex h-44 items-center justify-center overflow-hidden rounded-2xl bg-blue-50">
-                                    <svg viewBox="0 0 400 180" class="h-full w-full" role="img" aria-label="Ilustrasi lingkungan perkotaan">
-                                        <rect width="400" height="180" fill="#eff6ff"/>
-                                        <circle cx="326" cy="35" r="20" fill="#fde68a"/>
-                                        <rect y="140" width="400" height="40" fill="#dbeafe"/>
-                                        <path d="M0 160h400" stroke="#93c5fd" stroke-width="2"/>
-                                        <path d="M0 176h400" stroke="#fff" stroke-width="3" stroke-dasharray="28 18"/>
-                                        <path d="M55 140V67h58v73M131 140V42h66v98M215 140V82h56v58" fill="#bfdbfe" stroke="#60a5fa" stroke-width="2"/>
-                                        <path d="M65 81h12m15 0h12M65 102h12m15 0h12M65 122h12m15 0h12M143 57h14m14 0h14M143 78h14m14 0h14M143 99h14m14 0h14M143 120h14m14 0h14M227 96h12m12 0h12M227 117h12m12 0h12" stroke="#60a5fa" stroke-width="5"/>
-                                        <path d="M310 140V99m0-12V60h29" stroke="#475569" stroke-width="4" fill="none"/>
-                                        <path d="M330 60h17" stroke="#fbbf24" stroke-width="7" stroke-linecap="round"/>
-                                        <path d="M35 140v-30m0-8V85" stroke="#059669" stroke-width="5"/>
-                                        <circle cx="35" cy="92" r="17" fill="#6ee7b7"/>
-                                        <path d="M365 140v-30" stroke="#059669" stroke-width="5"/>
-                                        <circle cx="365" cy="99" r="21" fill="#6ee7b7"/>
-                                    </svg>
+                                <div class="mb-5 rounded-xl border border-slate-100 bg-[#FAFAFC] p-4">
+                                    <div class="flex items-center justify-between text-xs">
+                                        <span class="font-mono text-[11px] font-bold text-slate-400">#00142</span>
+                                        <span class="rounded-full bg-amber-50 px-2.5 py-0.5 text-[11px] font-semibold text-amber-800 ring-1 ring-inset ring-amber-200">Menunggu</span>
+                                    </div>
+                                    <h2 class="mt-2 font-display text-base font-bold text-slate-900">Perbaikan Penerangan Jalan Lingkungan</h2>
+                                    <p class="mt-1 text-xs text-slate-500">Jl. Melati No. 14, RT 02 / RW 05</p>
                                 </div>
-                                <p class="text-[10px] font-bold tracking-widest text-blue-600">CONTOH PENGADUAN</p>
-                                <h2 class="mt-2 font-display text-lg font-bold">Lampu jalan perlu perbaikan</h2>
-                                <p class="mt-2 text-xs leading-6 text-slate-500">Laporan sederhana. Dampak nyata untuk lingkungan.</p>
-                                <div class="mt-5 space-y-4 border-t border-slate-100 pt-5">
+                                <p class="text-[10px] font-bold tracking-widest text-blue-600">STATUS REAL-TIME</p>
+                                <div class="mt-4 space-y-4 border-t border-slate-100 pt-4">
                                     @foreach([['circle-check','Pengaduan diterima','Informasi tercatat dengan baik','text-emerald-600 bg-emerald-50'],['loader-circle','Dalam penanganan','Pengelola menindaklanjuti laporan','text-blue-600 bg-blue-50'],['check','Lingkungan lebih nyaman','Perubahan dimulai dari kepedulian','text-slate-400 bg-slate-100']] as [$icon,$title,$desc,$color])
                                         <div class="flex items-center gap-3">
                                             <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full {{ $color }}">
                                                 <i data-lucide="{{ $icon }}" aria-hidden="true" class="h-4 w-4 shrink-0"></i>
                                             </span>
                                             <div>
-                                                <p class="text-xs font-bold">{{ $title }}</p>
-                                                <p class="mt-1 text-[11px] text-slate-400">{{ $desc }}</p>
+                                                <p class="text-xs font-bold text-slate-800">{{ $title }}</p>
+                                                <p class="mt-0.5 text-[11px] text-slate-400">{{ $desc }}</p>
                                             </div>
                                         </div>
                                     @endforeach
                                 </div>
                             </div>
                         </div>
-                        <div class="absolute -bottom-1 right-2 flex items-center gap-3 rounded-2xl border border-emerald-100 bg-white px-5 py-4 shadow-lg shadow-slate-950/5 sm:-right-4">
+                        <div class="absolute -bottom-1 right-2 flex items-center gap-3 rounded-2xl border border-slate-200/80 bg-white px-5 py-4 shadow-xs sm:-right-4">
                             <span class="rounded-full bg-emerald-50 p-2 text-emerald-600">
                                 <i data-lucide="heart-handshake" aria-hidden="true" class="h-5 w-5 shrink-0"></i>
                             </span>
                             <div>
-                                <p class="text-xs font-bold">Kepedulian Anda berarti</p>
-                                <p class="mt-1 text-[10px] text-slate-400">Bersama, kita bisa membuat perubahan.</p>
+                                <p class="text-xs font-bold text-slate-800">Kepedulian Anda berarti</p>
+                                <p class="mt-0.5 text-[10px] text-slate-400">Bersama, kita bisa membuat perubahan.</p>
                             </div>
                         </div>
                     </div>
@@ -237,7 +225,7 @@
                     </div>
                     <a
                         href="{{ auth()->check() ? route(auth()->user()->dashboardRoute()) : route('register') }}"
-                        class="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-bold transition bg-blue-600 text-white shadow-sm shadow-blue-200 hover:bg-blue-700 shrink-0 bg-white text-blue-950 shadow-none hover:bg-blue-50"
+                        class="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-bold transition bg-white text-blue-950 hover:bg-slate-100 shrink-0"
                     >
                         Mulai Sekarang
                         <i data-lucide="arrow-right" aria-hidden="true" class="h-4 w-4 shrink-0"></i>
