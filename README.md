@@ -4,14 +4,14 @@
 > **Mahasiswa:** Allam Permata Putra  
 > **NIM:** 260558302016  
 > **Repository GitHub:** [https://github.com/allam1768/project-E_Report-260558302016](https://github.com/allam1768/project-E_Report-260558302016)  
-> **Live Demo Web (GitHub Pages):** [https://allam1768.github.io/project-E_Report-260558302016/landing-page.html](https://allam1768.github.io/project-E_Report-260558302016/landing-page.html)
+> **Live Demo Web (GitHub Pages):** [https://allam1768.github.io/project-E_Report-260558302016/](https://allam1768.github.io/project-E_Report-260558302016/)
 
 ---
 
 ## 🌐 Live Demo Web Preview
 
 Pratinjau antarmuka (UI/UX) dan rancangan tampilan halaman dapat diakses langsung secara online tanpa instalasi lokal melalui:  
-👉 **[https://allam1768.github.io/project-E_Report-260558302016/landing-page.html](https://allam1768.github.io/project-E_Report-260558302016/landing-page.html)**
+👉 **[https://allam1768.github.io/project-E_Report-260558302016/](https://allam1768.github.io/project-E_Report-260558302016/)**
 
 ---
 
